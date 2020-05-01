@@ -1,0 +1,3 @@
+# build properties
+ro.build.release_type=release
+persist.fod.night_mode_disabled=true

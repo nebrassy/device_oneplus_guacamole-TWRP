@@ -16,8 +16,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/frameworks/base/packages/SystemUI
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/frameworks/base/packages/SystemUI
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_props.mk
 
 # Audio
 PRODUCT_COPY_FILES += \

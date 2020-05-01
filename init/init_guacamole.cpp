@@ -72,14 +72,14 @@ void vendor_load_properties()
         }
         property_override("ro.build.product", "OnePlus7Pro");
         property_override("ro.display.series", "OnePlus 7 Pro");
-        property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 1910071200 release-keys");
+        property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys");
         if (rf_version == 4) {
             /* We are Europe */
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "model", "GM1913");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:10/QKQ1.190716.003/1910071200:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
             property_override("ro.product.system.name", "OnePlus7Pro_EEA");
         } else if (rf_version == 5) {
@@ -88,7 +88,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1917");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/1910071200:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
         } else {
         /* Default to global */
@@ -96,7 +96,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1917");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/1910071200:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
         }
     }
