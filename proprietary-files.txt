@@ -39,6 +39,11 @@ vendor/lib64/camera/components/com.oneplus.node.rtb.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 
+#Audio
+-app/OPSoundTuner/OPSoundTuner.apk|4c3c86a7a2984165c76b687c7582eebe8ba109cc
+etc/permissions/com.dolby.daxservice.xml
+-priv-app/daxService/daxService.apk
+
 # Fingerprint
 vendor/lib/hw/goodix.fod.msmnile.so
 vendor/lib/fp_hal_extension.so

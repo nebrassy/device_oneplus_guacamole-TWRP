@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 AICP-ROM
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <bool name="config_device_has_hw_nav_buttons">false</bool>
+
+    <!-- Whether device supports disabling hwkeys -->
+    <!-- <string name="pathHWKToggle"></string> -->
+
+    <bool name="config_device_supports_switch_refreshrate">true</bool>
+
+    <bool name="config_device_supports_soundtuner">true</bool>
+
+    <!-- Path to devices camera motor toggle files (examples shown further down) -->
+    <string name="pathCameraMotorEnableToggle">/sys/devices/platform/vendor/vendor:motor_pl/enable</string>
+    <string name="pathCameraMotorDirectionToggle">/sys/devices/platform/vendor/vendor:motor_pl/direction</string>
+    <string name="pathCameraMotorSWSwitchToggle">/sys/devices/platform/vendor/vendor:motor_pl/sw_switch</string>
+
+    <!-- Path to devices single-tap toggle file -->
+    <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
+
+    <!-- Path to devices High Brigness Mode toggle file -->
+    <string name="pathHBMModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm</string>
+    <string name="hbmOFF">"0"</string>
+    <string name="hbmON">"5"</string>
+
+    <!-- Path to devices SRGBMode toggle file -->
+    <string name="pathSRGBModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode</string>
+
+    <!-- Path to devices DCIMode toggle file -->
+    <string name="pathDCIModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode</string>
+
+    <!-- Path to devices DCDMode toggle file -->
+    <string name="pathDCDModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en</string>
+
+    <!-- Path to devices WideMode toggle file -->
+    <string name="pathWideModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_wide_color_mode</string>
+
+    <!-- Path to devices NightMode toggle file -->
+    <string name="pathNightModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/night_mode</string>
+
+    <!-- Whether device allow changing system vibrationlevels -->
+    <string name="pathSystemVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level</string>
+
+    <integer name="vibratorMinMV">1</integer>
+    <integer name="vibratorMaxMV">3</integer>
+    <integer name="vibratorDefaultMV">3</integer>
+
+    <!-- Path to devices FastCharge sysfs -->
+    <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>
+
+    <!-- Device Gesture Paths -->
+    <string name="pathGestureCircle">/proc/touchpanel/letter_o_enable</string>
+    <string name="pathGestureDoubleSwipe">/proc/touchpanel/double_swipe_enable</string>
+    <string name="pathGestureLeftArrow">/proc/touchpanel/left_arrow_enable</string>
+    <string name="pathGestureRightArrow">/proc/touchpanel/right_arrow_enable</string>
+    <string name="pathGestureDownSwipe">/proc/touchpanel/down_swipe_enable</string>
+    <string name="pathGestureUpSwipe">/proc/touchpanel/up_swipe_enable</string>
+    <string name="pathGestureLeftSwipe">/proc/touchpanel/left_swipe_enable</string>
+    <string name="pathGestureRightSwipe">/proc/touchpanel/right_swipe_enable</string>
+    <string name="pathGestureM">/proc/touchpanel/letter_m_enable</string>
+    <string name="pathGestureS">/proc/touchpanel/letter_s_enable</string>
+    <string name="pathGestureW">/proc/touchpanel/letter_w_enable</string>
+</resources>

@@ -8,8 +8,15 @@
 BOARD_VENDOR := oneplus
 DEVICE_PATH := device/oneplus/guacamole
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := OnePlus7Pro
+#Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_guacamole
+TARGET_RECOVERY_DEVICE_MODULES := libinit_guacamole
+
+# Assertation
+TARGET_OTA_ASSERT_DEVICE := guacamole,OnePlus7Pro,OnePlus7Pro_EEA
+
+#Camera
+TARGET_MOTORIZED_CAMERA := true
 
 # Display
 TARGET_SCREEN_DENSITY := 560
