@@ -61,6 +61,15 @@
     <integer name="vibratorMaxMV">3</integer>
     <integer name="vibratorDefaultMV">3</integer>
 
+    <!-- Whether device allow changing vibrationlevels -->
+    <string name="pathSystemVibStrength">/sys/class/leds/vibrator/vmax_mv_user</string>
+
+    <!-- Whether device allow changing calls vibrationlevels -->
+    <string name="pathCallVibStrength">/sys/class/leds/vibrator/vmax_mv_call</string>
+
+    <!-- Whether device allow changing notification vibrationlevels -->
+    <string name="pathNotifVibStrength">/sys/class/leds/vibrator/vmax_mv_strong</string>
+
     <!-- Path to devices FastCharge sysfs -->
     <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>
 
