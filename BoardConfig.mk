@@ -6,6 +6,7 @@
 -include device/oneplus/sm8150-common/BoardConfigCommon.mk
 
 BOARD_VENDOR := oneplus
+
 DEVICE_PATH := device/oneplus/guacamole
 
 #Init
@@ -47,7 +48,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Treble
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+#DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Fingerprint
 SOONG_CONFIG_ONEPLUS_MSMNILE_FOD_POS_X = 610
