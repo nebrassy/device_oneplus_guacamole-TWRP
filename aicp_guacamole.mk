@@ -47,5 +47,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-03-01
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
--include vendor/aicp/config/bootanimation.mk
