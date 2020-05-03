@@ -52,6 +52,7 @@
         <item>3300</item>
         <item>6000</item>
     </integer-array>
+
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
@@ -311,6 +312,7 @@
         <item>2000</item>
         <item>3300</item>
         <item>6000</item>
+    </integer-array>
 
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
