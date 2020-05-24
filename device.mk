@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.display.guacamole.rc
 
+#Build libjamesdsp
+PRODUCT_PACKAGES += \
+    JamesDSPManager
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.2-service.oneplus_msmnile
