@@ -50,6 +50,9 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Treble
 #DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+#TWRP Support
+-include device/twrp/guacamole/twrp.mk
+
 # Fingerprint
 SOONG_CONFIG_ONEPLUS_MSMNILE_FOD_POS_X = 610
 SOONG_CONFIG_ONEPLUS_MSMNILE_FOD_POS_Y = 2618
