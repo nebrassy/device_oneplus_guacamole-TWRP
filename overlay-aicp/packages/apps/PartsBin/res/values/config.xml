@@ -24,12 +24,7 @@
 
     <bool name="config_device_supports_switch_refreshrate">true</bool>
 
-    <bool name="config_device_supports_soundtuner">true</bool>
-
-    <!-- Path to devices camera motor toggle files (examples shown further down) -->
-    <string name="pathCameraMotorEnableToggle">/sys/devices/platform/vendor/vendor:motor_pl/enable</string>
-    <string name="pathCameraMotorDirectionToggle">/sys/devices/platform/vendor/vendor:motor_pl/direction</string>
-    <string name="pathCameraMotorSWSwitchToggle">/sys/devices/platform/vendor/vendor:motor_pl/sw_switch</string>
+    <!-- <bool name="config_device_supports_soundtuner">true</bool> -->
 
     <!-- Path to devices single-tap toggle file -->
     <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
@@ -56,19 +51,18 @@
 
     <!-- Whether device allow changing system vibrationlevels -->
     <string name="pathSystemVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level</string>
-
-    <integer name="vibratorMinMV">1</integer>
-    <integer name="vibratorMaxMV">3</integer>
+    <integer name="vibratorMinMV">0</integer>
+    <integer name="vibratorMaxMV">5</integer>
     <integer name="vibratorDefaultMV">3</integer>
 
     <!-- Whether device allow changing vibrationlevels -->
-    <string name="pathSystemVibStrength">/sys/class/leds/vibrator/vmax_mv_user</string>
+    <string name="pathSystemVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_user</string>
 
     <!-- Whether device allow changing calls vibrationlevels -->
-    <string name="pathCallVibStrength">/sys/class/leds/vibrator/vmax_mv_call</string>
+    <string name="pathCallVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_call</string>
 
     <!-- Whether device allow changing notification vibrationlevels -->
-    <string name="pathNotifVibStrength">/sys/class/leds/vibrator/vmax_mv_strong</string>
+    <string name="pathNotifVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_strong</string>
 
     <!-- Path to devices FastCharge sysfs -->
     <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>

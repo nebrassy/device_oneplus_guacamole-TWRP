@@ -426,6 +426,11 @@
     <!-- Slow brightness animation ramp rate in brightness units per second-->
     <integer translatable="false" name="config_brightness_ramp_rate_slow">60</integer>
 
+    <!-- Whether or not to skip the initial brightness ramps when the display transitions to
+         STATE_ON. Setting this to true will skip the brightness ramp to the last stored active
+         brightness value and will repeat for the following ramp if autobrightness is enabled. -->
+    <bool name="config_skipScreenOnBrightnessRamp">true</bool>
+
     <!-- Initial light sensor event rate in milliseconds for automatic brightness control. This is
          used for obtaining the first light sample when the device stops dozing.
          Set this to -1 to disable this feature. -->
@@ -434,4 +439,44 @@
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">48px</dimen>
 
+    <bool name="config_deviceHaveWakeUpProximity">true</bool>
+
+    <!-- System info -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone10/temp</string>
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+    <string name="config_sysGPUFreq">/sys/devices/platform/soc/2c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/clock_mhz</string>
+    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
+
+    <!-- Whether device supports pickupsensor for AD pulse -->
+    <bool name="config_dozePulsePickup">true</bool>
+
+    <!-- Whether device supports wake screen gesture for AD pulse -->
+    <bool name="config_dozeWakeLockScreenSensorAvailable">true</bool>
+
+    <!-- Whether device supports sensor based doze customizations -->
+    <bool name="config_dozePulseTilt">true</bool>
+
+    <!-- Default state for LiveDisplay -->
+    <bool name="config_liveDisplayAvailable">false</bool>
+
+    <!-- Use default display mode -->
+    <integer name="config_defaultLiveDisplayMode">0</integer>
+
+    <!-- Display mode remapping table.
+        If the mode names returned by the backend do not match
+        the predefined and translated strings in the Settings
+        app, they can be remapped here. The format is
+        "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>default:standard</item>
+        <item>xianyan:dynamic</item>
+        <item>ziran:photography</item>
+        <item>rouhe:basic</item>
+        <item>movie:cinema</item>
+    </string-array>
+
+    <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">false</bool>
 </resources>
