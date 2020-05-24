@@ -16,14 +16,11 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_guacamole
 # Assertation
 TARGET_OTA_ASSERT_DEVICE := guacamole,OnePlus7Pro,OnePlus7Pro_EEA
 
-#Camera
-TARGET_MOTORIZED_CAMERA := true
-
 # Display
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG := kronic_defconfig
+TARGET_KERNEL_CONFIG := oneplus7_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
