@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.display.guacamole.rc
+    init.aicp-guacamole.rc
 
 #Build libjamesdsp
 PRODUCT_PACKAGES += \

@@ -1,0 +1,121 @@
+on boot
+    # Display
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/modes
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/modes
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_wide_color_mode
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_wide_color_mode
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_customer_srgb_mode
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_customer_srgb_mode
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_customer_p3_mode
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_customer_p3_mode
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/DCI_P3
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/DCI_P3
+
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/night_mode
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/night_mode
+
+    # FPS measurement
+    chown system graphics /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps
+    chmod 0666 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps
+
+    # USB Fastcharge
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0664 /sys/kernel/fast_charge/force_fast_charge
+
+    # System Info
+    chown system system /sys/kernel/gpu/clock_mhz
+    chmod 0664 /sys/kernel/gpu/clock_mhz
+    chown system system /sys/kernel/gpu/gpu_busy
+    chmod 0664 /sys/kernel/gpu/gpu_busy
+
+    # Touchscreen and gestures
+    chown system system /proc/touchpanel/single_tap_enable
+    chmod 0660 /proc/touchpanel/single_tap_enable
+
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0660 /proc/touchpanel/double_tap_enable
+
+    chown system system /proc/touchpanel/letter_o_enable
+    chmod 0660 /proc/touchpanel/letter_o_enable
+
+    chown system system /proc/touchpanel/double_swipe_enable
+    chmod 0660 /proc/touchpanel/double_swipe_enable
+
+    chown system system /proc/touchpanel/up_arrow_enable
+    chmod 0660 /proc/touchpanel/up_arrow_enable
+
+    chown system system /proc/touchpanel/down_arrow_enable
+    chmod 0660 /proc/touchpanel/down_arrow_enable
+
+    chown system system /proc/touchpanel/left_arrow_enable
+    chmod 0660 /proc/touchpanel/left_arrow_enable
+
+    chown system system /proc/touchpanel/right_arrow_enable
+    chmod 0660 /proc/touchpanel/right_arrow_enable
+
+    chown system system /proc/touchpanel/left_swipe_enable
+    chmod 0660 /proc/touchpanel/left_swipe_enable
+
+    chown system system /proc/touchpanel/right_swipe_enable
+    chmod 0660 /proc/touchpanel/right_swipe_enable
+
+    chown system system /proc/touchpanel/up_swipe_enable
+    chmod 0660 /proc/touchpanel/up_swipe_enable
+
+    chown system system /proc/touchpanel/down_swipe_enable
+    chmod 0660 /proc/touchpanel/down_swipe_enable
+
+    chown system system /proc/touchpanel/letter_m_enable
+    chmod 0660 /proc/touchpanel/letter_m_enable
+
+    chown system system /proc/touchpanel/letter_w_enable
+    chmod 0660 /proc/touchpanel/letter_w_enable
+
+    chown system system /proc/touchpanel/letter_s_enable
+    chmod 0660 /proc/touchpanel/letter_s_enable
+
+#    # Pocket judge sysfs permissions
+#    chown system system /sys/kernel/pocket_judge/inpocket
+#    chmod 0664 /sys/kernel/pocket_judge/inpocket
+
+#    # Headphone gain
+#    chown system system /sys/kernel/sound_control/headphone_gain
+#    chmod 0666 /sys/kernel/sound_control/headphone_gain
+
+#    # Mic gain
+#    chown system system /sys/kernel/sound_control/mic_gain
+#    chmod 0666 /sys/kernel/sound_control/mic_gain
+
+#    # Earpiece gain
+#    chown system system /sys/kernel/sound_control/earpiece_gain
+#    chmod 0666 /sys/kernel/sound_control/earpiece_gain
+
+#    # Speaker gain
+#    chown system system /sys/kernel/sound_control/speaker_gain
+#    chmod 0666 /sys/kernel/sound_control/speaker_gain
+
+on post-fs
+    # Vibrator
+    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level
+
+    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_override
+    write system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_override 1
+    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_user
+    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_call
+    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_strong
