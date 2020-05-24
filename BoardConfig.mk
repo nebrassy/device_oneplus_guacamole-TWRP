@@ -45,7 +45,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Treble
-#DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 #TWRP Support
 -include device/twrp/guacamole/twrp.mk
