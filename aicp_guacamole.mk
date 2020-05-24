@@ -41,7 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Alex T. (GreekDragon)"
+    DEVICE_MAINTAINERS="Alex T. (GreekDragon), ;) (wartomato)"
 
 # Security patch level
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-03-01
