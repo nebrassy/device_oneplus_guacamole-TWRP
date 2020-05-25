@@ -113,9 +113,3 @@ on boot
 on post-fs
     # Vibrator
     chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level
-
-    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_override
-    write system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_override 1
-    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_user
-    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_call
-    chown system system /sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_strong

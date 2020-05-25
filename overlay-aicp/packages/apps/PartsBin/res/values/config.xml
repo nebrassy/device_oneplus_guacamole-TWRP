@@ -50,16 +50,10 @@
     <string name="pathNightModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/night_mode</string>
 
     <!-- Whether device allow changing system vibrationlevels -->
-    <string name="pathSystemVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_user</string>
+    <string name="pathSystemVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level</string>
     <integer name="vibratorMinMV">0</integer>
     <integer name="vibratorMaxMV">5</integer>
     <integer name="vibratorDefaultMV">3</integer>
-
-    <!-- Whether device allow changing calls vibrationlevels -->
-    <string name="pathCallVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_call</string>
-
-    <!-- Whether device allow changing notification vibrationlevels -->
-    <string name="pathNotifVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/vmax_mv_strong</string>
 
     <!-- Path to devices FastCharge sysfs -->
     <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>
