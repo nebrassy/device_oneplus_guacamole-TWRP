@@ -14,6 +14,8 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
+TARGET_INCLUDE_WIFI_EXT := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_guacamole
 PRODUCT_DEVICE := guacamole
@@ -33,17 +35,12 @@ TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
 # Build info
-BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus7Pro_EEA \
-    PRODUCT_NAME=OnePlus7Pro_EEA \
-    PRIVATE_BUILD_DESC="OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys"
+    PRODUCT_DEVICE=OnePlus7Pro \
+    PRODUCT_NAME=OnePlus7Pro \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Alex T. (GreekDragon), ;) (wartomato)"
-
-# Security patch level
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-03-01
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus

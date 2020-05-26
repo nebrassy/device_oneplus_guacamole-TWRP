@@ -63,16 +63,14 @@ void vendor_load_properties()
     int project_name = stoi(android::base::GetProperty("ro.boot.project_name", ""));
     int rf_version = stoi(android::base::GetProperty("ro.boot.rf_version", ""));
     if (project_name == 18821 ) {
-        /* We are hotdog */
+        /* We are guacamole */
         for (const auto &source : ro_product_props_default_source_order) {
             set_ro_product_prop(source, "brand", "OnePlus");
             set_ro_product_prop(source, "device", "OnePlus7Pro");
             set_ro_product_prop(source, "manufacturer", "OnePlus");
-            set_ro_product_prop(source, "name", "OnePlus7Pro");
         }
         property_override("ro.build.product", "OnePlus7Pro");
         property_override("ro.display.series", "OnePlus 7 Pro");
-        property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys");
         if (rf_version == 4) {
             /* We are Europe */
             for (const auto &source : ro_product_props_default_source_order) {
@@ -81,7 +79,10 @@ void vendor_load_properties()
             for (const auto &source : ro_fingerprints_default_source_order) {
                 set_ro_fingerprint(source, "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
-            property_override("ro.product.system.name", "OnePlus7Pro_EEA");
+            for (const auto &source : ro_product_props_default_source_order) {
+                set_ro_product_prop(source, "name", "OnePlus7TPro_EEA");
+            }
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys");
         } else if (rf_version == 5) {
             /* We are global */
             for (const auto &source : ro_product_props_default_source_order) {
@@ -90,6 +91,10 @@ void vendor_load_properties()
             for (const auto &source : ro_fingerprints_default_source_order) {
                 set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
+            for (const auto &source : ro_product_props_default_source_order) {
+                    set_ro_product_prop(source, "name", "OnePlus7Pro");
+            }
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys");
         } else {
         /* Default to global */
             for (const auto &source : ro_product_props_default_source_order) {
@@ -98,6 +103,10 @@ void vendor_load_properties()
             for (const auto &source : ro_fingerprints_default_source_order) {
                 set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
+            for (const auto &source : ro_product_props_default_source_order) {
+                    set_ro_product_prop(source, "name", "OnePlus7Pro");
+            }
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys");
         }
     }
 }
