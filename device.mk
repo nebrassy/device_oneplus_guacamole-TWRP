@@ -20,6 +20,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
 
+# Init
+PRODUCT_PACKAGES += \
+    libinit_guacamole
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_11811.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_11811.xml \

@@ -80,7 +80,7 @@ void vendor_load_properties()
                 set_ro_fingerprint(source, "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:10/QKQ1.190716.003/2003131900:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
-                set_ro_product_prop(source, "name", "OnePlus7TPro_EEA");
+                set_ro_product_prop(source, "name", "OnePlus7Pro_EEA");
             }
             property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2003131900 release-keys");
         } else if (rf_version == 5) {
