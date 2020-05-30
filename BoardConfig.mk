@@ -48,6 +48,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 #TWRP Support
+TW_USE_TOOLBOX := true
 -include device/twrp/guacamole/twrp.mk
 
 # Fingerprint
