@@ -31,4 +31,8 @@
      <dimen name="tri_state_up_dialog_position_l">270.375px</dimen>
      <dimen name="tri_state_up_dialog_position_deep">21.0px</dimen>
      <dimen name="tri_state_up_dialog_position_deep_land">21.0px</dimen>
+
+     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+      vibrator is capable of subtle vibrations -->
+     <bool name="config_vibrateOnIconAnimation">true</bool>
 </resources>
