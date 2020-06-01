@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
 # Device init scripts
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.aicp-guacamole.rc
+    init.aicp-sm8150.rc
 
 #Build libjamesdsp
 PRODUCT_PACKAGES += \
