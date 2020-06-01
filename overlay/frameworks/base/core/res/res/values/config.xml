@@ -437,7 +437,11 @@
     <integer name="config_autoBrightnessInitialLightSensorRate">-1</integer>
 
     <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">48px</dimen>
+    <dimen name="rounded_corner_radius">140px</dimen>
+
+    <!-- Radius of the software rounded corners at the bottom of the display
+         in its natural orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_bottom">100px</dimen>
 
     <bool name="config_deviceHaveWakeUpProximity">true</bool>
 
