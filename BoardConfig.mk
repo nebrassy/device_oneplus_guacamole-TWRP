@@ -20,7 +20,7 @@ TARGET_OTA_ASSERT_DEVICE := guacamole,OnePlus7Pro,OnePlus7Pro_EEA
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG := oneplus7_defconfig
+TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
