@@ -74,14 +74,14 @@
     <string name="pathGestureW">/proc/touchpanel/letter_w_enable</string>
 
     <!-- Show/hide the QS tile, if device supports DC Dimming or not -->
-    <bool name="DCDSwitch_tile">true</bool>
+    <bool name="enableDCDTile">true</bool>
 
     <!-- Show/hide the QS tile, if device supports refreshrate switching or not -->
-    <bool name="RefreshrateSwitch_tile">true</bool>
+    <bool name="enableRefreshrateTile">true</bool>
 
     <!-- Show/hide the QS tile, if device supports switching Displaymodes or not -->
-    <bool name="PanelModeSwitch_tile">true</bool>
+    <bool name="enablePanelModeTile">true</bool>
 
     <!-- Show/hide the QS tile, if device supports switching HighBrightness mode or not -->
-    <bool name="HBMModeSwitch_tile">true</bool>
+    <bool name="enableHBMModeTile">true</bool>
 </resources>
