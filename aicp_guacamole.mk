@@ -30,14 +30,10 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
-
 # Build info
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys"
+BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2007240000:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="OnePlus7Pro-user 10 QKQ1.190716.003 2005132200 release-keys"
+    PRIVATE_BUILD_DESC="OnePlus7Pro-user 10 QKQ1.190716.003 2007240000 release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus7Pro \
@@ -48,3 +44,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Alex T. (GreekDragon), ;) (wartomato)"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 3120
+TARGET_SCREEN_WIDTH := 1440
+-include vendor/aicp/config/bootanimation.mk
