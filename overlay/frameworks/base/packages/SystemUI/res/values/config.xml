@@ -19,7 +19,7 @@
 
 <resources>
     <!-- Color of the FOD view -->
-    <color name="config_fodColor">#ccccac</color>
+    <!-- <color name="config_fodColor">#ccccac</color> -->
 
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">6</integer>
