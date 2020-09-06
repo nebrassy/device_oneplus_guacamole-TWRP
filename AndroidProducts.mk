@@ -10,4 +10,4 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     aicp_guacamole-user \
     aicp_guacamole-userdebug
-#    aicp_guacamole-eng
+    aicp_guacamole-eng
