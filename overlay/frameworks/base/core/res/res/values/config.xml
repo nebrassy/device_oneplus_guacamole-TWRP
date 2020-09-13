@@ -403,7 +403,7 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">53</integer>
+    <integer name="config_screenBrightnessSettingDefault">184</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
@@ -507,5 +507,5 @@
     <bool name="config_filterDisplayModes">false</bool>
 
     <!-- Whether device supports in-display fingerprint when screen is turned off -->
-    <!-- <bool name="config_supportsInDisplayFingerprintGesture">true</bool> -->
+    <bool name="config_supportsInDisplayFingerprintGesture">true</bool>
 </resources>
