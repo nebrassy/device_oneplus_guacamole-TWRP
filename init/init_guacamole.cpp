@@ -109,4 +109,7 @@ void vendor_load_properties()
             property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 1910071200 release-keys");
         }
     }
+    property_override("ro.build.type", "user");
+    property_override("ro.vendor.build.type", "user");
+    property_override("ro.boot.verifiedbootstate", "green");
 }
