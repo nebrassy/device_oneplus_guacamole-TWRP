@@ -45,7 +45,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-# Boot animation
+# Boot animation screen size
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
--include vendor/aicp/config/bootanimation.mk
