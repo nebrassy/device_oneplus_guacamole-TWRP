@@ -73,17 +73,17 @@ on boot
     chown system system /proc/touchpanel/right_arrow_enable
     chmod 0660 /proc/touchpanel/right_arrow_enable
 
-    chown system system /proc/touchpanel/left_swipe_enable
-    chmod 0660 /proc/touchpanel/left_swipe_enable
+#    chown system system /proc/touchpanel/left_swipe_enable
+#    chmod 0660 /proc/touchpanel/left_swipe_enable
 
-    chown system system /proc/touchpanel/right_swipe_enable
-    chmod 0660 /proc/touchpanel/right_swipe_enable
+#    chown system system /proc/touchpanel/right_swipe_enable
+#    chmod 0660 /proc/touchpanel/right_swipe_enable
 
-    chown system system /proc/touchpanel/up_swipe_enable
-    chmod 0660 /proc/touchpanel/up_swipe_enable
+#    chown system system /proc/touchpanel/up_swipe_enable
+#    chmod 0660 /proc/touchpanel/up_swipe_enable
 
-    chown system system /proc/touchpanel/down_swipe_enable
-    chmod 0660 /proc/touchpanel/down_swipe_enable
+#    chown system system /proc/touchpanel/down_swipe_enable
+#    chmod 0660 /proc/touchpanel/down_swipe_enable
 
     chown system system /proc/touchpanel/letter_m_enable
     chmod 0660 /proc/touchpanel/letter_m_enable
