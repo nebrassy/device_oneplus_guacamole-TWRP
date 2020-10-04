@@ -18,6 +18,26 @@ It was released in May 2019.
 |                         | 720p@480fps, Auto HDR, gyro-EIS                                                                                                |
 | Camera (Front)          | Motorized pop-up 16 MP, f/2.0, 25mm (wide), 1/3.0", 1.0µm, Auto-HDR, 1080p@30fps, gyro-EIS                                     |
 
+*Currently these devices are supported:*
+
+| codename | Devicename       | Target area   | projectname   | baseband (rf)|
+|----------|------------------|---------------|---------------|--------------|
+| GM1913   | OnePlus 7 Pro    | Europe (-EEA) | 18821         | 4            |
+| GM1917   | OnePlus 7 Pro    | Global/US     | 18821         | 5            |
+
+*Unsupported as of writing:*
+
+| codename | Devicename       | Target area   | projectname   | baseband (rf)|
+|----------|------------------|---------------|---------------|--------------|
+| GM1910   | OnePlus 7 Pro    | China         | 18821         | 1            |
+| GM1911   | OnePlus 7 Pro    | India         | 18821         | 3            |
+| GM1915   | OnePlus 7 Pro    | T-Mobile      | 18831         | -            |
+| GM1920   | OnePlus 7 Pro NR | Europe (5G)   | 18827         | -            |
+| GM1925   | OnePlus 7 Pro NR | US (Sprint 5G)| 18825         | 5            |
+
+_projectname = android projectname defined by the vendor system props "ro.boot.project_name" or "ro.vendor.boot.project_name"_
+_baseband = defined baseband by the vendor system prop "ro.boot.rf_version"_
+
 Copyright 2019 - The AICP Project.
 
 ![OnePlus 7 Pro](https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7-pro-4.jpg "OnePlus 7 Pro")
