@@ -12,8 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.oem.region=OverSeas \
-    ro.vendor.build.release_type=release \
+    ro.product.device=guacamole \
     ro.vendor.build.real.device=true \
     vendor.product.device=guacamole \
-    vendor.product.manufacturer=OPD \
-    ro.product.device=guacamole
+    vendor.product.manufacturer=OPD

@@ -77,63 +77,75 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1913");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "name", "OnePlus7Pro_EEA");
             }
-            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2007030000 release-keys");
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2009281532 release-keys");
         } else if (rf_version == 5) {
             /* We are global */
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "model", "GM1917");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro");
             }
-            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2007030000 release-keys");
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2009281532 release-keys");
         } else if (rf_version == 1) {
             /* We are China */
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "model", "GM1910");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro_CH");
             }
-            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2007030000 release-keys");
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2009281532 release-keys");
         } else if (rf_version == 3) {
             /* We are India */
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "model", "GM1911");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro");
             }
-            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2007030000 release-keys");
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2009281532 release-keys");
         } else {
         /* Default to global */
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "model", "GM1917");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+                set_ro_fingerprint(source, "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro");
             }
-            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2007030000 release-keys");
+            property_override("ro.build.description", "OnePlus7Pro-user 10 QKQ1.190716.003 2009281532 release-keys");
         }
     }
-    property_override("ro.build.type", "user");
-    property_override("ro.vendor.build.type", "user");
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.boot.selinux", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");
     property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.warranty_bit", "0");
+    property_override("ro.build.release_type", "release");
+    property_override("ro.build.selinux", "1");
+    property_override("ro.build.tags", "release-keys");
+    property_override("ro.build.type", "user");
+    property_override("ro.debuggable", "0");
+    property_override("ro.secure", "1");
+    property_override("ro.vendor.build.release_type", "release");
+    property_override("ro.vendor.build.type", "user");
+    property_override("ro.warranty_bit", "0");
 }
