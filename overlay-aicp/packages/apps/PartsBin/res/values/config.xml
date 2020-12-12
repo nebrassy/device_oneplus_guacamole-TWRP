@@ -65,6 +65,8 @@
     <string name="pathGestureDoubleSwipe">/proc/touchpanel/double_swipe_enable</string>
     <string name="pathGestureLeftArrow">/proc/touchpanel/left_arrow_enable</string>
     <string name="pathGestureRightArrow">/proc/touchpanel/right_arrow_enable</string>
+    <!-- <string name="pathGestureUpArrow">/proc/touchpanel/up_arrow_enable</string> -->
+    <string name="pathGestureDownArrow">/proc/touchpanel/down_arrow_enable</string>
     <string name="pathGestureM">/proc/touchpanel/letter_m_enable</string>
     <string name="pathGestureS">/proc/touchpanel/letter_s_enable</string>
     <string name="pathGestureW">/proc/touchpanel/letter_w_enable</string>
