@@ -31,6 +31,15 @@
     <!-- Path to devices single-tap toggle file -->
     <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
 
+    <!-- Path to devices doubletap to wake toggle file -->
+    <!-- <string name="pathDoubleTapToWakeToggle">/sys/android_touch/doubletap2wake</string> -->
+
+    <!-- Path to devices sweep to wake toggle file -->
+    <!-- <string name="pathSweepToWakeToggle">/sys/android_touch/sweep2wake</string> -->
+
+    <!-- Path to devices sweep to sleep toggle file -->
+    <string name="pathSweepToSleepToggle">/sys/android_touch/sweep2sleep</string>
+
     <!-- Path to devices High Brigness Mode toggle file -->
     <string name="pathHBMModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm</string>
     <string name="hbmOFF">"0"</string>
