@@ -24,6 +24,10 @@
 
     <!-- Whether device supports switching the display refreshrate -->
     <bool name="config_device_supports_switch_refreshrate">true</bool>
+    <!-- Float value of the minimal/base refreshrate for this device -->
+    <integer name="BaseRefresh">60</integer>
+    <!-- Float value of the maximum/peak refreshrate for this device -->
+    <integer name="PeakRefresh">90</integer>
 
     <!-- Whether device supports panoramic SoundTuner -->
     <bool name="config_device_supports_soundtuner">true</bool>
