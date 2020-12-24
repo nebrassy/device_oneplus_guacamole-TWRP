@@ -200,7 +200,7 @@
         <dialog-enhancer-ducking value="0"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
-        <volmax-boost value="64"/>
+        <volmax-boost value="26"/>
         <volume-leveler-enable value="true"/>
         <volume-leveler-amount value="0"/>
         <volume-leveler-in-target value="-256"/>
@@ -263,7 +263,7 @@
         <dialog-enhancer-ducking value="0"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="93"/>
-        <volmax-boost value="60"/>
+        <volmax-boost value="20"/>
         <volume-leveler-enable value="true"/>
         <volume-leveler-amount value="0"/>
         <volume-leveler-in-target value="-256"/>
@@ -326,7 +326,7 @@
         <dialog-enhancer-ducking value="0"/>
         <surround-decoder-enable value="true"/>
         <surround-boost value="0"/>
-        <volmax-boost value="64"/>
+        <volmax-boost value="26"/>
         <volume-leveler-enable value="true"/>
         <volume-leveler-amount value="0"/>
         <volume-leveler-in-target value="-256"/>
