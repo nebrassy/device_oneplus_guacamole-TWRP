@@ -58,6 +58,3 @@ SOONG_CONFIG_ONEPLUS_MSMNILE_SENSORS_ALS_POS_Y := 260
 # Treble
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-#TWRP Support
-TW_USE_TOOLBOX := true
--include device/twrp/guacamole/twrp.mk
