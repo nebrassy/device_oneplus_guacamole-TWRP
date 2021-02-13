@@ -11,8 +11,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # build properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.vc_call_vol_steps=7 \
-    ro.config.media_vol_steps=25 \
     persist.sys.oem.region=OverSeas \
     ro.product.device=guacamole \
     ro.vendor.build.real.device=true \
