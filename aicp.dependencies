@@ -2,6 +2,6 @@
   {
     "repository":  "AICP/device_oneplus_sm8150-common",
     "target_path": "device/oneplus/sm8150-common",
-    "branch":      "q10.0"
+    "branch":      "r11.1"
   }
 ]
