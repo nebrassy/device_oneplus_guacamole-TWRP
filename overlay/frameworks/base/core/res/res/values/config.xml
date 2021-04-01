@@ -466,6 +466,9 @@
          Set this to -1 to disable this feature. -->
     <integer name="config_autoBrightnessInitialLightSensorRate">-1</integer>
 
+    <!-- Disable lockscreen translucent decor by default -->
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+
     <!-- Radius of the software rounded corners. -->
     <!-- <dimen name="rounded_corner_radius">140px</dimen> -->
 
