@@ -43,17 +43,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.aicp-sm8150.rc
 
-#Build libjamesdsp
+# JamesDSP
 PRODUCT_PACKAGES += \
     JamesDSPManager
-
-## LiveDisplay
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.0-service-sdm
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.2-service.oneplus_msmnile
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
