@@ -28,6 +28,9 @@
     <dimen name="keyguard_affordance_width">42dp</dimen>
     <dimen name="keyguard_indication_margin_bottom">48dp</dimen>
 
+    <!-- Biometric Prompt -->
+    <dimen name="biometric_dialog_fod_margin">30dp</dimen>
+
     <!-- Padding needed on bottom of lockscreen for FoD devices -->
     <dimen name="op_keyguard_indication_margin_bottom">140.0px</dimen>
 
