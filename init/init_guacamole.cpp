@@ -5,14 +5,13 @@
 #include <android-base/properties.h>
 #include <android-base/strings.h>
 
-#include "property_service.h"
+// #include "property_service.h" turned off because of missing chroma.h
 #include "vendor_init.h"
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
 using android::base::GetProperty;
-using android::init::property_set;
 
 // copied from build/tools/releasetools/ota_from_target_files.py
 // but with "." at the end and empty entry
@@ -35,6 +34,19 @@ std::vector<std::string> ro_fingerprints_default_source_order = {
     "bootimage.",
 };
 
+void property_set(char const prop[], char const value[])
+{
+    prop_info *pi;
+    pi = (prop_info*) __system_property_find(prop);
+
+    if (pi && strncmp(prop, "ro.", 3))
+        __system_property_update(pi, value, strlen(value));
+    else if(!pi)
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+    else
+        LOG(ERROR) << "Unable to set property '" << prop << "' from vendor_init: Read-only property was already set\n";
+};
+
 void property_override(char const prop[], char const value[], bool add = true)
 {
     auto pi = (prop_info *) __system_property_find(prop);
@@ -44,7 +56,7 @@ void property_override(char const prop[], char const value[], bool add = true)
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
     }
-}
+};
 
 void vendor_load_properties()
 {
