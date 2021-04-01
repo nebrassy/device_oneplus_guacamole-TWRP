@@ -539,10 +539,10 @@
         <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
              the region defined by the two arrays -->
         <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-            <item>-1</item>
+            <item>70</item>
         </integer-array>
         <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-            <item>-1</item>
+            <item>40</item>
         </integer-array>
 
         <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
