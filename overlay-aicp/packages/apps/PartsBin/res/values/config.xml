@@ -83,6 +83,10 @@
     <string name="pathGestureM">/proc/touchpanel/letter_m_enable</string>
     <string name="pathGestureS">/proc/touchpanel/letter_s_enable</string>
     <string name="pathGestureW">/proc/touchpanel/letter_w_enable</string>
+    <!-- <string name="pathGestureDownSwipe">/proc/touchpanel/down_swipe_enable</string>
+    <string name="pathGestureUpSwipe">/proc/touchpanel/up_swipe_enable</string>
+    <string name="pathGestureLeftSwipe">/proc/touchpanel/left_swipe_enable</string>
+    <string name="pathGestureRightSwipe">/proc/touchpanel/right_swipe_enable</string> -->
 
     <!-- Show/hide the QS tile, if device supports DC Dimming or not -->
     <bool name="enableDCDTile">true</bool>
