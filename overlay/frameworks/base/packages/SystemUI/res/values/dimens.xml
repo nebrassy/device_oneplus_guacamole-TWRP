@@ -45,4 +45,5 @@
 
     <dimen name="rounded_corner_content_padding">74px</dimen>
     <dimen name="system_icons_keyguard_padding_end">16dp</dimen>
+    <dimen name="multi_user_switch_keyguard_margin">12dp</dimen>
 </resources>
