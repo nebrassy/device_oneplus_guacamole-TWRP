@@ -30,6 +30,33 @@
     <!-- Show camera affordance on Keyguard -->
     <bool name="config_keyguardShowCameraAffordance">true</bool>
 
+    <!-- Whether to show activity indicators in the status bar -->
+    <bool name="config_showActivity">false</bool>
+
+   <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
+        does not work well, particularly with noisy touchscreens. Note that disabling it may
+        increase the rate of unintentional unlocks. -->
+   <!-- <bool name="config_lockscreenAntiFalsingClassifierEnabled">false</bool> -->
+
+   <!-- Preferred refresh rate at keyguard, if supported by the display -->
+   <!-- <integer name="config_keyguardRefreshRate">90</integer> -->
+
+   <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
+   <bool name="config_roundedCornerMultipleRadius">true</bool>
+
+   <!-- Whether to clip notification contents with a rounded rectangle. Might be expensive on
+        certain GPU's and thus can be turned off with only minimal visual impact. -->
+   <bool name="config_notifications_round_rect_clipping">true</bool>
+
+   <!-- Show RSRP Signal level for LTE -->
+   <bool name="config_showRsrpSignalLevelforLTE">true</bool>
+
+   <!-- SystemUI Plugins that can be loaded on builds. -->
+   <string-array name="config_pluginWhitelist" translatable="false">
+       <item>com.android.systemui</item>
+       <item>com.android.systemui.plugin.globalactions.wallet</item>
+   </string-array>
+
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">7</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">8</integer>
