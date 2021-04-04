@@ -14,17 +14,12 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-TARGET_INCLUDE_WIFI_EXT := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1917
 PRODUCT_MANUFACTURER := OnePlus
-
-TARGET_VENDOR_PRODUCT_NAME := OnePlus7Pro
-TARGET_VENDOR_DEVICE_NAME := OnePlus7Pro
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
