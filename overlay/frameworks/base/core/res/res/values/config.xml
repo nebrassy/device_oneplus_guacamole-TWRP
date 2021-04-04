@@ -492,9 +492,6 @@
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
-    <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">8dp</dimen>
-
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">true</bool>
 
