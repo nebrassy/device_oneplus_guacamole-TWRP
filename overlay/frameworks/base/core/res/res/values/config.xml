@@ -493,14 +493,7 @@
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
     <!-- Radius of the software rounded corners. -->
-    <!-- <dimen name="rounded_corner_radius">140px</dimen> -->
-
-    <!-- Radius of the software rounded corners at the bottom of the display
-         in its natural orientation. If zero, the value of rounded_corner_radius is used. -->
-    <!-- <dimen name="rounded_corner_radius_bottom">100px</dimen> -->
-
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">8dp</dimen>
+    <dimen name="rounded_corner_radius">223px</dimen>
 
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">true</bool>
