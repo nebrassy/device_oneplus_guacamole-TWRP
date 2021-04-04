@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_pahu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_pahu.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_audio.xml \
+    $(LOCAL_PATH)/audio/dolby/dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax_default.xml
+
 # Camera
 PRODUCT_PACKAGES += \
     OnePlusCameraHelper
