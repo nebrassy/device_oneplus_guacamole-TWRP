@@ -3,8 +3,3 @@
 #
 #e.g. 67313/1 https://gerrit.aicp-rom.com prebuilts/clang/host/linux-x86
 #
-289635 https://review.lineageos.org hardware/interfaces
-292868 https://review.lineageos.org hardware/qcom-caf/sm8150/media
-292869 https://review.lineageos.org hardware/qcom-caf/sm8150/audio
-292939 https://review.lineageos.org hardware/qcom-caf/sm8150/display
-107570 https://gerrit.aicp-rom.com device/oneplus/sm8150-common
