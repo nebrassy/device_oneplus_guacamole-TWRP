@@ -41,10 +41,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.aicp-sm8150.rc
 
-# JamesDSP
-PRODUCT_PACKAGES += \
-    JamesDSPManager
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
