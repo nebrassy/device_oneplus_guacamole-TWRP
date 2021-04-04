@@ -16,34 +16,33 @@
 */
 -->
 <resources>
+    <!-- Height of the status bar header bar when on Keyguard -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 
-  <!-- Custom cutout overlay view sizes -->
-  <dimen name="config_customCutoutTopWidth">223.0px</dimen>
-  <dimen name="config_customCutoutTopHeight">223.0px</dimen>
-  <dimen name="config_customCutoutBottomWidth">223.0px</dimen>
-  <dimen name="config_customCutoutBottomHeight">223.0px</dimen>
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">63px</dimen>
 
-    <!-- The width/height of the phone/camera/unlock icon view on keyguard. -->
-    <dimen name="keyguard_affordance_height">42dp</dimen>
-    <dimen name="keyguard_affordance_width">42dp</dimen>
-    <dimen name="keyguard_indication_margin_bottom">48dp</dimen>
-
-    <!-- Biometric Prompt -->
-    <dimen name="biometric_dialog_fod_margin">30dp</dimen>
-
-    <!-- Padding needed on bottom of lockscreen for FoD devices -->
-    <dimen name="op_keyguard_indication_margin_bottom">140.0px</dimen>
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">@dimen/status_bar_padding_end</dimen>
 
     <!-- TrustDrawable: Minimum inner radius of the breathing animation -->
     <dimen name="trust_circle_inner_radius_visible_min">18dp</dimen>
 
     <!-- TrustDrawable: Maximum inner radius of the breathing animation -->
     <dimen name="trust_circle_inner_radius_visible_max">20dp</dimen>
-
     <!-- TrustDrawable: Inner radius at the end of the exit animation -->
     <dimen name="trust_circle_inner_radius_exit">32dp</dimen>
 
-    <dimen name="rounded_corner_content_padding">74px</dimen>
-    <dimen name="system_icons_keyguard_padding_end">16dp</dimen>
     <dimen name="multi_user_switch_keyguard_margin">12dp</dimen>
+
+    <!-- The width/height of the phone/camera/unlock icon view on keyguard. -->
+    <dimen name="keyguard_affordance_height">42dp</dimen>
+    <dimen name="keyguard_affordance_width">42dp</dimen>
+    <dimen name="keyguard_indication_margin_bottom">48dp</dimen>
+
+  <!-- Custom cutout overlay view sizes -->
+  <dimen name="config_customCutoutTopWidth">223.0px</dimen>
+  <dimen name="config_customCutoutTopHeight">223.0px</dimen>
+  <dimen name="config_customCutoutBottomWidth">223.0px</dimen>
+  <dimen name="config_customCutoutBottomHeight">223.0px</dimen>
 </resources>
