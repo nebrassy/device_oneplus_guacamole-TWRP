@@ -84,4 +84,7 @@
 
      <!-- FPSInfoService FPS node file path -->
      <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps</string>
+
+     <!-- The DC dimming kernel node path, defaults to empty -->
+     <string name="config_deviceDcDimmingSysfsNode" translatable="false">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en</string>
 </resources>
