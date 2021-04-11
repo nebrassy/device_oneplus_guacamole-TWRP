@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Julian Veit (Claymore1297), Ralf Luther (wartomato)"
+    DEVICE_MAINTAINERS="Julian Veit (Claymore1297)"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
