@@ -29,9 +29,6 @@
     <!-- Float value of the maximum/peak refreshrate for this device -->
     <integer name="PeakRefresh">90</integer>
 
-    <!-- Whether device supports panoramic SoundTuner -->
-    <bool name="config_device_supports_soundtuner">true</bool>
-
     <!-- Path to devices single-tap toggle file -->
     <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
 
