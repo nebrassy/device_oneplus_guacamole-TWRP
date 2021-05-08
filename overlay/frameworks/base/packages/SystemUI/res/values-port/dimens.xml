@@ -17,4 +17,7 @@
 <resources>
     <!-- The bottom margin of the keyguard security container -->
     <dimen name="kg_security_container_min_bottom_margin">625px</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">27dp</dimen>
 </resources>
