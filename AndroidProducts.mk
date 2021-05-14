@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_guacamole.mk
+    $(LOCAL_DIR)/twrp_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_guacamole-user \
-    aicp_guacamole-userdebug \
-    aicp_guacamole-eng
+    twrp_guacamole-user \
+    twrp_guacamole-userdebug \
+    twrp_guacamole-eng

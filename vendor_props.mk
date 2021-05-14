@@ -13,7 +13,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.oem.region=OverSeas \
     persist.sys.oem_smooth=1 \
-    ro.product.vendor.device=OnePlus7Pro \
     ro.product.vendor.brand=OnePlus \
     ro.product.vendor.manufacturer=OnePlus \
     ro.vendor.build.real.device=true \
