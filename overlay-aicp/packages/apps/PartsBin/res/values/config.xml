@@ -16,15 +16,14 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <bool name="config_device_has_hw_nav_buttons">false</bool>
+    <!-- Configs -->
 
     <!-- Whether device supports disabling hwkeys -->
-    <!-- <string name="pathHWKToggle"></string> -->
+    <bool name="config_device_has_hw_nav_buttons">false</bool>
 
     <!-- Whether device supports switching the display refreshrate -->
     <bool name="config_device_supports_switch_refreshrate">true</bool>
-    <!-- String values for the min/max refreshrates supported on this device  
+    <!-- String values for the min/max refreshrates supported on this device
     <string name="display_min_refresh_rate_low_label">60fps</string>
     <string name="display_min_refresh_rate_high_label">90fps</string>
     <array name="config_displayMinRefreshRates">
@@ -35,6 +34,20 @@
     <integer name="BaseRefresh">60</integer>
     <!-- Float value of the maximum/peak refreshrate for this device -->
     <integer name="PeakRefresh">90</integer>
+
+    <!-- Whether device provides panel options -->
+    <!-- <bool name="config_device_supports_panels">true</bool> -->
+
+    <!-- Whether device supports offscreen gestures -->
+    <!-- <bool name="config_device_supports_gestures">true</bool> -->
+
+    <!-- Whether device supports vibration options -->
+    <!-- <bool name="config_device_supports_vibrations">true</bool> -->
+
+    <!-- Paths -->
+
+    <!-- Path to hardware keys toggle sysfs -->
+    <!-- <string name="pathHWKToggle"></string> -->
 
     <!-- Path to devices single-tap toggle file -->
     <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
@@ -68,7 +81,7 @@
     <!-- Path to devices NightMode toggle file -->
     <string name="pathNightModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/night_mode</string>
 
-    <!-- Whether device allow changing system vibrationlevels -->
+    <!-- Path to devices vibrationlevels and strength values-->
     <string name="pathSystemVibStrength">/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level</string>
     <integer name="vibratorMinMV">0</integer>
     <integer name="vibratorMaxMV">5</integer>
@@ -77,7 +90,7 @@
     <!-- Path to devices FastCharge sysfs -->
     <string name="pathFastChargeToggle">/sys/kernel/fast_charge/force_fast_charge</string>
 
-    <!-- Device Gesture Paths -->
+    <!-- Path to devices supported Offscreen Gesture -->
     <string name="pathGestureCircle">/proc/touchpanel/letter_o_enable</string>
     <string name="pathGestureDoubleSwipe">/proc/touchpanel/double_swipe_enable</string>
     <string name="pathGestureLeftArrow">/proc/touchpanel/left_arrow_enable</string>
@@ -92,11 +105,13 @@
     <string name="pathGestureLeftSwipe">/proc/touchpanel/left_swipe_enable</string>
     <string name="pathGestureRightSwipe">/proc/touchpanel/right_swipe_enable</string> -->
 
+    <!-- QS Tiles -->
+
     <!-- Show/hide the QS tile, if device supports DC Dimming or not -->
     <bool name="enableDCDTile">true</bool>
 
     <!-- Show/hide the QS tile, if device supports refreshrate switching or not -->
-    <!-- <bool name="enableRefreshrateTile">true</bool> -->
+    <bool name="enableRefreshrateTile">true</bool>
 
     <!-- Show/hide the QS tile, if device supports switching Displaymodes or not -->
     <bool name="enablePanelModeTile">true</bool>
