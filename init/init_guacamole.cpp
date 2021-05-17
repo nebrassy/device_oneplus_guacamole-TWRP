@@ -10,6 +10,7 @@
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <sys/sysinfo.h>
 
 using android::base::GetProperty;
 
@@ -21,7 +22,7 @@ std::vector<std::string> ro_product_props_default_source_order = {
     "odm.",
     "vendor.",
     "system.",
-};
+}
 
 // copied from build/tools/releasetools/ota_from_target_files.py
 // but with "." at the end and empty entry
@@ -32,7 +33,7 @@ std::vector<std::string> ro_fingerprints_default_source_order = {
     "vendor.",
     "system.",
     "bootimage.",
-};
+}
 
 void property_set(char const prop[], char const value[])
 {
@@ -45,7 +46,7 @@ void property_set(char const prop[], char const value[])
         __system_property_add(prop, strlen(prop), value, strlen(value));
     else
         LOG(ERROR) << "Unable to set property '" << prop << "' from vendor_init: Read-only property was already set\n";
-};
+}
 
 void property_override(char const prop[], char const value[], bool add = true)
 {
@@ -56,7 +57,38 @@ void property_override(char const prop[], char const value[], bool add = true)
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
     }
-};
+}
+
+void load_dalvikvm_properties()
+{
+  struct sysinfo sys;
+  sysinfo(&sys);
+  if (sys.totalram > 8192ull * 1024 * 1024) {
+    // from - phone-xhdpi-12288-dalvik-heap.mk
+    // configuration for devices with RAM > 8GB
+  property_override("dalvik.vm.heapstartsize", "24m");
+  property_override("dalvik.vm.heapgrowthlimit", "384m");
+  property_override("dalvik.vm.heaptargetutilization", "0.42");
+  property_override("dalvik.vm.heapmaxfree", "56m");
+    }
+  else if(sys.totalram > 6144ull * 1024 * 1024) {
+    // from - phone-xhdpi-8192-dalvik-heap.mk
+    // configuration for devices with RAM > 6GB
+    property_override("dalvik.vm.heapstartsize", "24m");
+    property_override("dalvik.vm.heapgrowthlimit", "256m");
+    property_override("dalvik.vm.heaptargetutilization", "0.46");
+    property_override("dalvik.vm.heapmaxfree", "48m");
+    }
+  else {
+    // from - phone-xhdpi-6144-dalvik-heap.mk
+    property_override("dalvik.vm.heapstartsize", "16m");
+    property_override("dalvik.vm.heapgrowthlimit", "256m");
+    property_override("dalvik.vm.heaptargetutilization", "0.5");
+    property_override("dalvik.vm.heapmaxfree", "32m");
+  }
+  property_override("dalvik.vm.heapsize", "512m");
+  property_override("dalvik.vm.heapminfree", "8m");
+}
 
 void vendor_load_properties()
 {
@@ -153,4 +185,6 @@ void vendor_load_properties()
     property_override("ro.vendor.build.release_type", "release");
     property_override("ro.vendor.build.type", "user");
     property_override("ro.warranty_bit", "0");
+    // dalvikvm props
+    load_dalvikvm_properties();
 }
