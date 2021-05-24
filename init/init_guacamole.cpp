@@ -22,7 +22,7 @@ std::vector<std::string> ro_product_props_default_source_order = {
     "odm.",
     "vendor.",
     "system.",
-}
+};
 
 // copied from build/tools/releasetools/ota_from_target_files.py
 // but with "." at the end and empty entry
@@ -33,7 +33,7 @@ std::vector<std::string> ro_fingerprints_default_source_order = {
     "vendor.",
     "system.",
     "bootimage.",
-}
+};
 
 void property_set(char const prop[], char const value[])
 {

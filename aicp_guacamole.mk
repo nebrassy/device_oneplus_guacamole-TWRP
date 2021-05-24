@@ -26,7 +26,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Build info
-BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2104052320:user/release-keys"
+BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2105071634:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus7Pro \
@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Julian Veit (Claymore1297)"
+    DEVICE_MAINTAINERS="Julian Veit (Claymore1297), Ralf Luther (wartomato)"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
