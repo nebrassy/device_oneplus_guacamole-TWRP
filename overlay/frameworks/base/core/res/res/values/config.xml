@@ -521,25 +521,6 @@
     <!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">false</bool>
 
-    <!-- Use default display mode -->
-    <integer name="config_defaultLiveDisplayMode">0</integer>
-
-    <!-- Display mode remapping table.
-        If the mode names returned by the backend do not match
-        the predefined and translated strings in the Settings
-        app, they can be remapped here. The format is
-        "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>default:standard</item>
-        <item>xianyan:dynamic</item>
-        <item>ziran:photography</item>
-        <item>rouhe:basic</item>
-        <item>movie:cinema</item>
-    </string-array>
-
-    <!-- Should we filter any display modes which are unampped? -->
-    <bool name="config_filterDisplayModes">false</bool>
-
     <!-- The default intensity level for haptic feedback on keyboard usage. -->
     <bool name="config_enableHapticTextHandle">true</bool>
 
