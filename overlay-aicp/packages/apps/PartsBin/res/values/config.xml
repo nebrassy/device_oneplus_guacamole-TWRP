@@ -23,26 +23,18 @@
 
     <!-- Whether device supports switching the display refreshrate -->
     <bool name="config_device_supports_switch_refreshrate">true</bool>
-    <!-- String values for the min/max refreshrates supported on this device
+    <!-- String values for the min/max refreshrates supported on this device -->
     <string name="display_min_refresh_rate_low_label">60fps</string>
     <string name="display_min_refresh_rate_high_label">90fps</string>
-    <array name="config_displayMinRefreshRates">
-        <item>60</item>
-        <item>90</item>
-    </array> -->
-    <!-- Float value of the minimal/base refreshrate for this device -->
-    <integer name="BaseRefresh">60</integer>
-    <!-- Float value of the maximum/peak refreshrate for this device -->
-    <integer name="PeakRefresh">90</integer>
 
     <!-- Whether device provides panel options -->
-    <!-- <bool name="config_device_supports_panels">true</bool> -->
+    <bool name="config_device_supports_panels">true</bool>
 
     <!-- Whether device supports offscreen gestures -->
-    <!-- <bool name="config_device_supports_gestures">true</bool> -->
+    <bool name="config_device_supports_gestures">true</bool>
 
     <!-- Whether device supports vibration options -->
-    <!-- <bool name="config_device_supports_vibrations">true</bool> -->
+    <bool name="config_device_supports_vibrations">true</bool>
 
     <!-- Paths -->
 
@@ -109,9 +101,6 @@
 
     <!-- Show/hide the QS tile, if device supports DC Dimming or not -->
     <bool name="enableDCDTile">true</bool>
-
-    <!-- Show/hide the QS tile, if device supports refreshrate switching or not -->
-    <bool name="enableRefreshrateTile">true</bool>
 
     <!-- Show/hide the QS tile, if device supports switching Displaymodes or not -->
     <bool name="enablePanelModeTile">true</bool>
