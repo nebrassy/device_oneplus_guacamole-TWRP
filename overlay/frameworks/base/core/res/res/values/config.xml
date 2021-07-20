@@ -567,22 +567,31 @@
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
-        <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
-             the region defined by the two arrays -->
-        <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-            <item>70</item>
-        </integer-array>
-        <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-            <item>40</item>
-        </integer-array>
+    <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
+         the region defined by the two arrays -->
+    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
+        <item>70</item>
+    </integer-array>
+    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
+        <item>40</item>
+    </integer-array>
 
-        <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-        <integer name="config_defaultRefreshRateInZone">90</integer>
+    <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
-        <!-- The default peak refresh rate for a given device. Change this value if you want to allow
-             for higher refresh rates to be automatically used out of the box -->
-        <integer name="config_defaultPeakRefreshRate">90</integer>
+    <!-- The default peak refresh rate for a given device. Change this value if you want to allow
+         for higher refresh rates to be automatically used out of the box -->
+    <integer name="config_defaultPeakRefreshRate">90</integer>
 
     <!-- Whether device supports in-display fingerprint when screen is turned off -->
     <!-- <bool name="config_supportsInDisplayFingerprintGesture">true</bool> -->
+
+    <!-- Defines the sysfs attribute path used by the device
+         to enable/disable DC dimming. -->
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en</string>
+
+    <!-- OnePlus uses a proprietary vibrator hal to utilize the new powerful motor since the
+         OnePlus 7 Pro. This HAL expects a different format for the data instead of the usual (ms)
+         timing(the duration which the vibrator is expected to vibrate for). -->
+    <bool name="config_hasOnePlusHapticMotor">false</bool>
 </resources>
