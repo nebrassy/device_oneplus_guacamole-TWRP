@@ -537,6 +537,10 @@
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
+    <!-- If we allow automatic adjustment of screen brightness while dozing, how many times we want
+         to reduce it to preserve the battery. Value of 100% means no scaling. -->
+    <fraction name="config_screenAutoBrightnessDozeScaleFactor">80%</fraction>
+
     <!-- Whether device supports pickupsensor for AD pulse -->
     <bool name="config_dozePulsePickup">true</bool>
 
