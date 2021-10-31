@@ -26,7 +26,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Build info and overrides
-BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2108161852:user/release-keys"
+BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2110211502:user/release-keys"
 
 PRODUCT_OVERRIDE_INFO := true
 PRODUCT_OVERRIDE_FINGERPRINT := google/coral/coral:11/RQ3A.211001.001/7641976:user/release-keys
