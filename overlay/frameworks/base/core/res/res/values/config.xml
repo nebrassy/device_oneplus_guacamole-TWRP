@@ -482,6 +482,13 @@
          Set this to -1 to disable this feature. -->
     <integer name="config_autoBrightnessInitialLightSensorRate">-1</integer>
 
+    <!-- Default screen brightness for VR setting. Target default value: 0x0BB for EVT1.1. -->
+    <!-- 8 bit brightness level of 6 corresponds to the 10 bit brightness level of 0x0B6,
+         8 bit brightness level of 7 corresponds to the 10 bit brightness level of 0x0C1 on EVT1.1. -->
+    <integer name="config_screenBrightnessForVrSettingDefault">7</integer>
+    <integer name="config_screenBrightnessForVrSettingMinimum">6</integer>
+    <integer name="config_screenBrightnessForVrSettingMaximum">7</integer>
+
     <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
 
@@ -501,6 +508,9 @@
     <!-- Boolean indicating whether or not to revert to default country code when cellular
     radio is unable to find any MCC information to infer wifi country code from -->
     <bool translatable="false" name="config_wifi_revert_country_code_on_cellular_loss">false</bool>
+
+    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
+    <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
     <integer name="config_safe_media_volume_index">9</integer>
@@ -577,10 +587,10 @@
     <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
          the region defined by the two arrays -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>70</item>
+        <item>74</item> <!-- 77% UI brightness -->
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>40</item>
+        <item>63</item>
     </integer-array>
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
@@ -589,6 +599,9 @@
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
     <integer name="config_defaultPeakRefreshRate">90</integer>
+
+    <!-- Whether or not Wide Colour Gamut (wcg) mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
 
     <!-- Whether device supports in-display fingerprint when screen is turned off -->
     <!-- <bool name="config_supportsInDisplayFingerprintGesture">true</bool> -->
