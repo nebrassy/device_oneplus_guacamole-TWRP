@@ -101,8 +101,8 @@ on boot
     chown system system /sys/android_touch/sweep2sleep
     chmod 0664 /sys/android_touch/sweep2sleep
 
-    chown system system /sys/android_touch/sweep2wake
-    chmod 0664 /sys/android_touch/sweep2wake
+#    chown system system /sys/android_touch/sweep2wake
+#    chmod 0664 /sys/android_touch/sweep2wake
 
 #    # Pocket judge sysfs permissions
 #    chown system system /sys/kernel/pocket_judge/inpocket
