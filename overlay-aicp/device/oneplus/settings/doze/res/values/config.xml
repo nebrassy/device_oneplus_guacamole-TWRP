@@ -13,6 +13,7 @@
 <resources>
 <!-- Definition of the device's sensors to make them accessible
      to the speciic doze package -->
-    <string name="vendorPickupSensor" translatable="false">oneplus.sensor.pickup</string>
+    <!-- <string name="vendorPickupSensor" translatable="false">oneplus.sensor.pickup</string> -->
+    <string name="vendorPickupSensor" translatable="false">oneplus.sensor.op_motion_detect</string>
     <string name="vendorPocketSensor" translatable="false">oneplus.sensor.pocket</string>
 </resources>
