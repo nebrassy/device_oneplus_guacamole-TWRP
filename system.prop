@@ -1,5 +1,8 @@
 # Media
 ro.media.recorder-max-base-layer-fps=60
 
+# System (Recovery)
+persist.sys.binary_xml=false
+
 # USAP
 persist.device_config.runtime_native.usap_pool_enabled=true
