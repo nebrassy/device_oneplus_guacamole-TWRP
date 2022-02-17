@@ -603,8 +603,15 @@
     <!-- Whether or not Wide Colour Gamut (wcg) mode should be enabled on this device -->
     <bool name="config_enableWcgMode">true</bool>
 
-    <!-- Whether device supports in-display fingerprint when screen is turned off -->
-    <!-- <bool name="config_supportsInDisplayFingerprintGesture">true</bool> -->
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>720</item>  <!-- <item>sensorLocationX</item> -->
+        <item>2728</item> <!-- <item>sensorLocationY</item> -->
+        <item>110</item>  <!-- <item>sensorRadius</item> -->
+    </integer-array>
+
+    <!-- How long it takes for the HW to start illuminating after the illuminati -->
+    <integer name="config_udfps_illumination_transition_ms">10</integer>
 
     <!-- OnePlus uses a proprietary vibrator hal to utilize the new powerful motor since the
          OnePlus 7 Pro. This HAL expects a different format for the data instead of the usual (ms)
