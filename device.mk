@@ -82,7 +82,7 @@ TW_EXCLUDE_BASH := true
 
 #Properties
 TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.date.utc;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
+    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
