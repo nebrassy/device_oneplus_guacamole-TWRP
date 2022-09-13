@@ -5,30 +5,57 @@ load_op7pro()
 {
     resetprop "ro.product.model" $1
     resetprop "ro.product.name" "OnePlus7Pro"
+    resetprop "ro.product.bootimage.name" "OnePlus7Pro"
+    resetprop "ro.product.odm.name" "OnePlus7Pro"
+    resetprop "ro.product.system_ext.name" "OnePlus7Pro"
+    resetprop "ro.product.vendor.name" "OnePlus7Pro"
     resetprop "ro.build.product" "OnePlus7Pro"
     resetprop "ro.product.device" "OnePlus7Pro"
+    resetprop "ro.product.bootimage.device" "OnePlus7Pro"
+    resetprop "ro.product.odm.device" "OnePlus7Pro"
+    resetprop "ro.product.system_ext.device" "OnePlus7Pro"
+    resetprop "ro.product.vendor.device" "OnePlus7Pro"
     resetprop "ro.vendor.product.device" "OnePlus7Pro"
     resetprop "ro.display.series" "OnePlus 7 Pro"
+    resetprop "vendor.product.device" "OnePlus7Pro"
 }
 
 load_op7pro5g()
 {
     resetprop "ro.product.model" $1
     resetprop "ro.product.name" "OnePlus7ProNR"
+    resetprop "ro.product.bootimage.name" "OnePlus7ProNR"
+    resetprop "ro.product.odm.name" "OnePlus7ProNR"
+    resetprop "ro.product.system_ext.name" "OnePlus7ProNR"
+    resetprop "ro.product.vendor.name" "OnePlus7ProNR"
     resetprop "ro.build.product" "OnePlus7ProNR"
     resetprop "ro.product.device" "OnePlus7ProNR"
+    resetprop "ro.product.bootimage.device" "OnePlus7ProNR"
+    resetprop "ro.product.odm.device" "OnePlus7ProNR"
+    resetprop "ro.product.system_ext.device" "OnePlus7ProNR"
+    resetprop "ro.product.vendor.device" "OnePlus7ProNR"
     resetprop "ro.vendor.product.device" "OnePlus7ProNR"
     resetprop "ro.display.series" "OnePlus 7 Pro 5G"
+    resetprop "vendor.product.device" "OnePlus7ProNR"
 }
 
 load_op7()
 {
     resetprop "ro.product.model" $1
     resetprop "ro.product.name" "OnePlus7"
+    resetprop "ro.product.bootimage.name" "OnePlus7"
+    resetprop "ro.product.odm.name" "OnePlus7"
+    resetprop "ro.product.system_ext.name" "OnePlus7"
+    resetprop "ro.product.vendor.name" "OnePlus7"
     resetprop "ro.build.product" "OnePlus7"
     resetprop "ro.product.device" "OnePlus7"
+    resetprop "ro.product.bootimage.device" "OnePlus7"
+    resetprop "ro.product.odm.device" "OnePlus7"
+    resetprop "ro.product.system_ext.device" "OnePlus7"
+    resetprop "ro.product.vendor.device" "OnePlus7"
     resetprop "ro.vendor.product.device" "OnePlus7"
     resetprop "ro.display.series" "OnePlus 7"
+    resetprop "vendor.product.device" "OnePlus7"
 }
 
 variant=$(getprop ro.boot.project_name)
